@@ -9,6 +9,11 @@
 	background-color: #252323;
 }
 
+.header > nav .logo {
+	width: 160px;
+	height: 75px;
+}
+
 .rede-sociais {
 	display: flex;
 	justify-content: center;
@@ -21,6 +26,12 @@
 	}
 	
 	.search input {
-		width: 400px;
+		width: 380px;
 	}
+}
+
+/* ========= Carousel ========= */
+
+#area-slide > .slide_principal .carousel-item img {
+	height: 300px;
 }
