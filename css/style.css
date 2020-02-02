@@ -1,0 +1,26 @@
+* {
+	font-family: 'Lato', sans-serif;
+	list-style: none;
+}
+
+/* ========= header ========= */
+
+.header {
+	background-color: #252323;
+}
+
+.rede-sociais {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 560px){
+	.search {
+		width: 100%;
+	}
+	
+	.search input {
+		width: 400px;
+	}
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	
+<head>
+	
+	<title>Site Bootstrap</title>
+	<meta charset="utf-8">
+		
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+	<meta name="keywords" content="HTML5,CSS3,JS,Bootstrap">
+	<meta name="description" content="Prática Bootstrap 4">
+	<meta name="author" content="Artur">
+	
+	<!-- estilo customizado -->
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- bootsrap -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+	<!-- normalize -->
+	<link rel="stylesheet" href="node_modules/normalize/normalize.css">
+	
+	<!-- fonte awesome -->
+	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+	
+	<!-- google fontes -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+	
+	<!-- favicon -->
+	<link rel="icon" href="img/icon.png">
+	
+	<!-- html5shiv -->
+	<script src="node_modules/html5shiv/dist/html5shiv.js"></script>
+	<script src="node_modules/html5shiv/dist/html5shiv-printshiv.js"></script>
+		
+</head>
+
+<body>
+
+<header class="header mb-none">	
+	
+	<!-- menu superior -->
+	<nav class="d-flex justify-content-between align-items-center p-2">
+		
+		<a href="index.html" class="navbar-brand ml-4 mb-2">
+			<img src="img/webworld.png" alt="logo WebWolrd">
+		</a><!-- logo -->
+		
+		<ul class="d-flex mb-2">
+			<li class="nav-item mr-4"><a href="#"><img src="img/copy.png" alt="copy-imagem"></a></li>
+			<li class="nav-item mr-4"><a href="#"><img src="img/facebook.png" alt="facebook-imagem"></a></li>
+			<li class="nav-item mr-4"><a href="#"><img src="img/twitter.png" alt="twitter-imagem"></a></li>
+			<li class="nav-item mr-4"><a href="#"><img src="img/linkedin.png" alt="linkedin-imagem"></a></li>
+		</ul><!-- redes sociais -->
+		
+		<button class="navbar-toggler d-lg-none bg-white" type="button" data-toggle="collapse" data-target="#menu-navegacao" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fas fa-bars"></i>
+		</button>
+		
+	</nav>
+	
+	<!-- menu inferior -->
+	<nav class="navbar navbar-expand-lg bg-white">
+		
+		
+		<div class="collapse navbar-collapse p-2" id="menu-navegacao">
+			
+			<ul class="d-flex ml-auto flex-wrap mb-2 mt-2">
+				<li class="nav-item mr-4">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> 
+				</li>
+				<li class="nav-item mr-4">
+					<a class="nav-link" href="#">About Us</a>
+				</li>
+				<li class="nav-item mr-4">
+					<a class="nav-link" href="#">Service</a>
+				</li>
+				<li class="nav-item mr-4">
+					<a class="nav-link" href="#">Pages</a>
+				</li>
+				<li class="nav-item mr-4">
+					<a class="nav-link" href="#">Blog</a>
+				</li>
+				<li class="nav-item mr-4">
+					<a class="nav-link" href="#">Contact Us</a>
+				</li>
+			</ul><!-- menu de navegação -->
+			
+			<form class="form-inline ml-auto mr-5 mb-2 mt-2 search">
+				<input class="form-control" type="search" aria-label="search" placeholder="search something">
+				<button class="btn btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
+			</form><!-- search -->
+			
+		</div>
+		
+	</nav>
+	
+</header><!-- header -->
+
+<section id="area-slide" class="carousel slide" data-ride="carousel">
+
+	<ol class="carousel-indicators">
+		<li data-target="area-slide" data-slide-to="0" class="active">
+		<li data-target="area-slide" data-slide-to="1">
+		<li data-target="aea-slide"  data-slide-to="2">
+		<li data-target="area-slide" data-slide-to="3">
+	</ol>
+	
+	<div class="carousel-inner">
+		
+		<!-- Conteúdo do Slide -->
+		<div class="carousel-item active">
+			<img class="d-block w-100" src="img/miami.jpg" alt="miami.jpg">
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="img/mossoro.jpg" alt="mossoro.jpg">
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="img/newYork.jpg" alt="newYork.jpg">
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="img/portoDeGalinhas.jpg" alt="portoDeGalinhas.jpg">
+		</div>
+		
+	</div>
+	
+	<!-- arrow -->
+	<a class="carousel-control-prev" href="#area-slide" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#area-slide" role="button" data-slide="next">
+		<span class="carousel-control-next-icon bg-dark p-2" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+	
+</section><!-- Sliders -->
+
+<section class="container mt-3 w-100">
+
+	<h2 class="h2 text-center">Viaje bem viaje CFB Turismo</h2>
+	<p class="text-center">
+		Pensou em viajar? Então consulte nossos pacotes nacionais e internacionais, consulte também nossas opções de cruzeiro. <br>
+		Compre pelo telefone sem sair de casa, basta se cadastrar em uma de nossas lojas uma única vez e comprar pelo telefone quantas vezes quiser. <br>
+		Então você já sabe, pensou em viajar? Pensou CFB Turismo.
+	</p>
+
+</section>
+
+<script src="js/projeto_bootstrap.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+</body>
+	
+</html>
