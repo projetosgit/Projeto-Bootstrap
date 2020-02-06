@@ -6,18 +6,41 @@
 /* ========= header ========= */
 
 .header {
-	background-color: #252323;
+	background: radial-gradient(ellipse at center, rgba(222,222,222,1) 0%, rgba(214,214,214,1) 47%, rgba(207,207,207,1) 100%);
 }
 
-.header > nav .logo {
+.header > nav .logo-img {
 	width: 160px;
 	height: 75px;
+	box-shadow: 4px 4px 20px #fff;
+	padding: 5px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+
+.header > nav h3 {
+	font-weight: bold;
+	text-shadow: 3px 6px 5px #000;
+}
+
+.header > nav p {
+	font-weight: bold;
+	color:#fff;
+	text-shadow: 3px 6px 5px #000;
+	position: absolute;
+	right: 25px;
+	top: 70px;
 }
 
 .rede-sociais {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-shadow: 4px 4px 20px #fff;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
 }
 
 @media screen and (max-width: 560px){
@@ -28,10 +51,96 @@
 	.search input {
 		width: 380px;
 	}
+	
+	.header {
+		padding-top: 100px;
+	}
+	
+	.header > nav .logo {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	
+	.header > nav h3 {
+		font-size: 20px;
+	}
+	
+	.header > nav p {
+		font-weight: bold;
+		color:#fff;
+		text-shadow: 3px 6px 5px #000;
+		position: absolute;
+		right: 40px;
+		top: 60px;
+		font-size: 15px;
+	}
+	
+	.header > nav .rede-sociais {
+		position: absolute;
+		left: 190px;
+		top: 35px;
+	}
+	
+	.header > nav .btn-header {
+		position: absolute;
+		right: -3px;
+		top: 3px;
+	}
+	
+	.header > .menu-superior {
+		flex-direction: column;
+	}
+	
 }
 
-/* ========= Carousel ========= */
+/* ======== modal ======== */
 
-#area-slide > .slide_principal .carousel-item img {
-	height: 300px;
+.bg-modal {
+	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
 }
+
+.text-title {
+	font-weight: bold;
+	color:#000;
+	text-shadow: 2px 2px 7px #86aecc;
+}
+
+.login-facebook {
+	background-color: #3a559f;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+
+.login-google {
+	background-color: #ff920a;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+
+.google-icon {
+	color: #fff;
+}
+
+/* ========= jumbotron ========= */
+
+.promocoes-select {
+	background: radial-gradient(ellipse at center, rgba(185,87,255,1) 0%, rgba(117,66,255,1) 100%);
+}
+
+.promocoes-select > div label, .promocoes {
+	font-weight: bold;
+	color:#fff;
+	text-shadow: 3px 6px 5px #000;
+	border: 1px solid #fff;
+}
+
+@media screen and (max-width: 560px) {
+	
+	.promocoes-select > .select-container > .select-promocoes {
+		width: 400px;
+	}
+}
+
