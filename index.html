@@ -72,16 +72,36 @@
 		<div class="collapse navbar-collapse p-2" id="menu-navegacao">
 			
 			<ul class="d-flex ml-auto flex-wrap mb-2 mt-2">
-				<li class="nav-item mr-4">
-					<a class="nav-link" href="#" data-toggle="modal" data-target="#login">
+				<li class="nav-item mr-2">
+					<a class="nav-link text-info" href="#" data-toggle="modal" data-target="#login">
 						Entrar <span class="sr-only">(current)</span>
 					</a> 
 				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link" href="#">About Us</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle text-info"" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Viagens
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item text-info" href="#">
+							<i class="fas fa-route mr-2"></i>Nacional
+						</a>
+						<a class="dropdown-item text-info" href="#">
+							<i class="fas fa-route mr-2"></i>Internacional
+						</a>
+					</div>
 				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link" href="#">Service</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle text-info"" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Quando Viajar
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item text-info" href="#">
+							<i class="fas fa-route mr-2"></i>Baixa Temporada
+						</a>
+						<a class="dropdown-item text-info" href="#">
+							<i class="fas fa-route mr-2"></i>Carnaval
+						</a>
+					</div>
 				</li>
 				<li class="nav-item mr-4">
 					<a class="nav-link" href="#">Pages</a>
@@ -285,11 +305,11 @@
  </section><!-- jumbotron -->
  
  <!-- Área de modais -->
-<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal fade ml-3" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered " role="document">
     <div class="modal-content bg-modal">
       <div class="modal-header">
-        <h5 class="modal-title text-title" id="TituloModalCentralizado">
+        <h5 class="modal-title text-title text-info" id="TituloModalCentralizado">
 			Bem-vindo à sua próxima viagem
 		</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
@@ -298,13 +318,13 @@
       </div>
       <div class="modal-body">
 		
-		<form class="px-4 py-3">
+		<form class="px-4 p-1">
 			<div class="form-group">
-			  <label for="exampleDropdownFormEmail1">Endereço de email</label>
+			  <label for="exampleDropdownFormEmail1" class="text-muted">Endereço de email</label>
 			  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@exemplo.com">
 			</div>
 			<div class="form-group">
-			  <label for="exampleDropdownFormPassword1">Senha</label>
+			  <label for="exampleDropdownFormPassword1" class="text-muted">Senha</label>
 			  <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Senha">
 			</div>
 			<div class="form-check d-flex justify-content-between">
@@ -312,22 +332,25 @@
 			  <label class="form-check-label" for="dropdownCheck">
 				Lembrar Senha
 			  </label>
-			  <a class="nav-link" href="#">Esqueceu a senha?</a>
+			  <a class="nav-link text-info" href="#">Esqueceu a senha?</a>
 			</div>
 			<div class="d-flex">
-				<button type="submit" class="btn btn-primary mt-3">Entrar</button>
+				<button type="submit" class=" btn btn-info mt-3">
+					<i class="fas fa-sign-in-alt mr-2"></i>
+					<span class="mb-3">Entrar</span>
+				</button>
 			</div>
-			<div class="d-flex pt-3">
-				<a href="#" class="login-facebook w-50 p-2 mr-3">
+			<div class="d-flex pt-3 justify-content-center login-redes-sociais">
+				<a href="#" class="login-facebook w-100 p-2 mr-3">
 					<i class="fab fa-facebook text-light"></i>
 					<span class="text-light">Acessar com Facebook</span>
 				</a>
-				<a href="#" class="login-google w-50 p-2 nav-link">
+				<a href="#" class="login-google w-100 p-2 nav-link">
 					<i class="fab fa-google-plus google-icon"></i>
 					<span class="text-light">Acessar com Google</span>
 				</a>
 			</div>
-			<a class="nav-link text-center" href="#">Novo, por aqui? Regitre-se.</a>
+			<a class="nav-link text-center text-info" href="#">Novo, por aqui? Regitre-se.</a>
 		</form>
       </div>
       <div class="modal-footer">
