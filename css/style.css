@@ -138,6 +138,85 @@
 	}
 }
 
+/* ======== cards de propaganda ======== */
+
+
+
+/* ======== banner-principal ======== */
+
+.banner-principal {
+	position: relative;
+}
+
+.banner-principal figcaption {
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,0.8);
+	color: #fff;
+	width: 97.87%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 2s;
+}
+
+.banner-principal:hover figcaption {
+	opacity: 1;
+}
+
+.banner-principal figcaption .pagamento {
+	position: absolute;
+	left: 220px;
+}
+
+.banner-principal figcaption .valor-pagamento {
+	position: absolute;
+	left: 310px;
+	bottom: -10px;
+}
+
+@media screen and (min-width: 870px) and (max-width: 1200px){
+	
+	.banner-principal figcaption {
+		position: absolute;
+		top: 0;
+		width: 97%;
+		height: 100%;
+	}
+	
+	.banner-principal figcaption .atracoes-turisticas {
+		position: absolute;
+		top: 80px;
+	}
+	
+	.banner-principal figcaption .pagamento {
+		position: absolute;
+		left: 190px;
+		top: 80px;
+	}
+	
+	.banner-principal figcaption .pagamento p {
+		font-size: 25px;
+	}
+	
+	.banner-principal figcaption .pagamento h3 {
+		font-size: 22px;
+	}
+
+	.banner-principal figcaption .valor-pagamento {
+		position: absolute;
+		left: 220px;
+		top: 17px;
+	}
+	
+}
+
+@media screen and (max-width: 870px) {
+	
+	.banner-principal figcaption {
+		display: none;
+	}
+}
+
 /* ======== modal ======== */
 
 .bg-modal {
@@ -179,10 +258,21 @@
 	border: 1px solid #fff;
 }
 
+.promocoes-select > div .select-promocoes-container {
+	width: 58%;
+}
+
 @media screen and (max-width: 560px) {
 	
-	.promocoes-select > .select-container > .select-promocoes {
-		width: 400px;
+	.promocoes-select > div .select-promocoes-container .select-propaganda-text {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 998px) {
+	
+	.promocoes-select > div .select-promocoes-container {
+		width: 88%;
 	}
 }
 
