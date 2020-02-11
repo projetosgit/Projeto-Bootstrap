@@ -1,6 +1,8 @@
 * {
 	font-family: 'Lato', sans-serif;
 	list-style: none;
+	outline: none;
+	text-decoration: none;
 }
 
 html,body {
@@ -282,10 +284,6 @@ body {
 
 /* ========= jumbotron ========= */
 
-.promocoes-select {
-	background: radial-gradient(ellipse at center, rgba(185,87,255,1) 0%, rgba(117,66,255,1) 100%);
-}
-
 .promocoes-select > div label, .promocoes {
 	font-weight: bold;
 	color:#fff;
@@ -311,3 +309,119 @@ body {
 	}
 }
 
+/* ========= footer ========= */
+
+.footer {
+	background-color: #771AAF;
+}
+
+.footer hr {
+	padding: 1px;
+	background-color: #fff;
+}
+
+.footer > .container {
+	margin-bottom: 60px;
+}
+
+.footer > .container h4 {
+	color: #fff;
+	font-weight: bold;
+}
+
+.footer > .container p {
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	width: 500px;
+	margin: 0 auto;
+}
+
+.footer > .container a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer > .container .newslatter-container form {
+	width: 70%;
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer > .container .newslatter-container form img {
+	margin-left: 20px;
+}
+
+.footer > .container .newslatter-container form input {
+	padding: 5px;
+	height: 35px;
+	width: 50%;
+	border: 2px solid #fff;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+
+.footer > .container .newslatter-container form button {
+	padding: 5px 10px;
+	height: 35px;
+	background: transparent;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 12px;
+	border: 2px solid #fff;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+}
+
+.footer > .container .newslatter-container form button:hover {
+	background: #fff;
+	color: #771AAF;
+	transition: 0.5s;
+}
+
+.footer > .menu-footer h4 {
+	color: #fff;
+	text-align: center;
+	margin-left: 40px;
+}
+
+.footer > .menu-footer div ul li {
+	text-align: center;
+}
+
+.footer > .menu-footer div ul li a {
+	color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+	
+	.footer > .container .newslatter-container  {
+		position: relative;
+		display: inline;
+	}
+	
+	.footer > .container .newslatter-container form input {
+		position: absolute;
+		left: 0;
+		top: 90px;
+		width: 100%;
+	}
+	
+	.footer > .container p {
+		margin-top: 13%;
+		width: 420px;
+	}
+	
+	.footer > .contato-footer {
+		margin-left: 100px;
+	}
+	
+	.footer > .contato-footer div {
+		flex-direction: column;
+		
+	}
+
+}
